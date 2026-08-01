@@ -1,0 +1,84 @@
+<html class=" ">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="renderer" content="webkit" />
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+        <title>云顶超级管理系统</title>
+        <meta name="title" content="云顶信盟系统" />
+        <meta name="description" content="云顶信盟系统是一个专业的企业管理平台，提供全面的业务流程自动化和数据管理功能。它整合了客户关系管理（CRM）、财务管理、项目管理等多种功能，帮助企业提升运营效率、降低成本并实现数据驱动决策。通过云端部署，用户可以随时随地访问和管理业务数据。" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="云顶信盟系统" />
+        <meta property="og:description" content="云顶信盟系统是一个专业的企业管理平台，提供全面的业务流程自动化和数据管理功能。它整合了客户关系管理（CRM）、财务管理、项目管理等多种功能，帮助企业提升运营效率、降低成本并实现数据驱动决策。通过云端部署，用户可以随时随地访问和管理业务数据。" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:title" content="云顶信盟系统" />
+        <meta property="twitter:description" content="云顶信盟系统是一个专业的企业管理平台，提供全面的业务流程自动化和数据管理功能。它整合了客户关系管理（CRM）、财务管理、项目管理等多种功能，帮助企业提升运营效率、降低成本并实现数据驱动决策。通过云端部署，用户可以随时随地访问和管理业务数据。" />
+        <link href="static/css/chunk-libs.3dfb7769.css" rel="stylesheet" />
+        <link href="static/css/app.a86270d3.css" rel="stylesheet" />
+        <link href="./圆形.png" rel="shortcut icon"/>
+        <link href="./圆形.png" rel="apple-touch-icon"/>
+    </head>
+    <body cz-shortcut-listen="true">
+        <div id="app">
+            <div data-v-463998f7="" class="login-container flexJA flexSb">
+                <div data-v-463998f7="" class="left flexJA flexDc">
+                    <img data-v-463998f7="" src="static/picture/导航logo-1-banner.png" alt="" class="bg" />
+                    <div data-v-463998f7="" class="title"></div>
+                </div>
+                <div data-v-463998f7="" class="right flexJA flexDc">
+                    <form data-v-463998f7="" id="form" class="el-form login-form el-form--label-left" autocomplete="on">
+                        <div data-v-463998f7="" class="title-container"><h3 data-v-463998f7="" class="title">客户端登录</h3></div>
+                        <div data-v-463998f7="" class="text">用户名</div>
+                        <div data-v-463998f7="" class="el-form-item is-error is-required el-form-item--medium">
+                            <div class="el-form-item__content">
+                                <span data-v-463998f7="" class="svg-container">
+                                    <img src="static/picture/ic_username.png" alt="username icon">
+                                </span>
+                                <div data-v-463998f7="" class="el-input el-input--medium">
+                                    <input tabindex="1" type="text" autocomplete="on" placeholder="用户名" id="username" name="username" class="el-input__inner" />
+                                </div>
+                                <div class="el-form-item__error"></div>
+                            </div>
+                        </div>
+                        <div data-v-463998f7="" class="text">密码</div>
+                        <div data-v-463998f7="" class="el-form-item el-tooltip is-required el-form-item--medium" aria-describedby="el-tooltip-3042" tabindex="0">
+                            <div class="el-form-item__content">
+                                <span data-v-463998f7="" class="svg-container">
+                                    <img src="static/picture/ic_password.png" alt="password icon">
+                                </span>
+                                <div data-v-463998f7="" class="el-input el-input--medium">
+                                    <input tabindex="2" type="password" autocomplete="on" placeholder="密码" id="password" name="password" class="el-input__inner" />
+                                </div>
+                                <div class="el-form-item__error"></div>
+                                <span data-v-463998f7="" class="show-pwd">
+                                    <img src="static/picture/ic_eye.png" alt="eye icon" class="eye-icon">
+                                    <img src="static/picture/ic_invisible_eye.png" alt="invisible eye icon" class="eye-icon" style="display: none;">
+                                </span>
+                            </div>
+                        </div>
+                        <div data-v-463998f7="" class="text">验证码</div>
+                        <div data-v-463998f7="" class="el-form-item el-tooltip is-required el-form-item--medium" aria-describedby="el-tooltip-3042" tabindex="0">
+                            <div class="el-form-item__content">
+                                <img id="verify" src="static/picture/1.png" alt="verification code" onclick="refreshVerify();" style="position: absolute;top: 0;right: 0;height: 47px;" />
+                                <span data-v-463998f7="" class="svg-container">
+                                    <img src="static/picture/ic_verification.png" alt="verification icon">
+                                </span>
+                                <div data-v-463998f7="" class="el-input el-input--medium" style="width: 60%;">
+                                    <input tabindex="2" type="text" autocomplete="on" placeholder="验证码" id="verifyCode" name="verifyCode" class="el-input__inner" />
+                                </div>
+                                <div class="el-form-item__error"></div>
+                            </div>
+                        </div>
+                        <button data-v-463998f7="" type="submit" id="btnLogin" class="el-button el-button--primary el-button--medium" style="width: 100%; margin-bottom: 30px;">
+                            <span>登录</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <script src="static/js/jquery-3.7.1.min.js"></script>
+        <script src="static/js/ebzcecf9.js"></script>
+        <script src="static/js/login.js"></script>
+    </body>
+</html>
